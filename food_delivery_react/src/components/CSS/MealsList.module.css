@@ -1,0 +1,42 @@
+.mealsList {
+    padding: 20px;
+    margin-top: 1.5rem;
+    text-align: left; /* Align text to the left for a different style */
+    color: #333; /* A darker color for text */
+  }
+  
+  .mealsList h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .mealsList {
+    padding: 20px;
+    margin-top: 1.5rem;
+    background-color: #f8f8f8; /* Light background for contrast */
+    border-radius: 10px;
+  }
+  
+  .mealItem {
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .mealItem:last-child {
+    border-bottom: none;
+  }
+  
+  .mealItem h2 {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+  
+  .mealItem p {
+    margin: 0.5rem 0;
+  }
+  
+  .price {
+    color: #8a2b06;
+    font-weight: bold;
+  }
+  

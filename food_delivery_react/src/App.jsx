@@ -6,6 +6,7 @@ const APP = ()=>{
     <div>
       <CART></CART>
       <MealsDescription></MealsDescription>
+      
     </div>
    )
 }
