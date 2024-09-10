@@ -1,7 +1,10 @@
+import CART from "./components/CART/cart";
+
 const APP = ()=>{
    return(
     <div>
-      <h1>Hello World</h1>
+      <CART></CART>
+      <h1>hiiiiii</h1>
     </div>
    )
 }
