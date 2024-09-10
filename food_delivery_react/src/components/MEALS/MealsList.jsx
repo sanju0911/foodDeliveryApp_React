@@ -8,7 +8,7 @@ const MealsList = () => {
       id: 1,
       name: "Sushi",
       description: "Finest fish and veggies",
-      price: 22.99
+      price: 22.999
     },
     {
       id: 2,
