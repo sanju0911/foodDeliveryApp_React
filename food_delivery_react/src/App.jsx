@@ -1,4 +1,4 @@
-import CART from "./components/CART/cart";
+import CART from "./components/CART/header";
 import MealsDescription from "./components/MEALS/MealsDescription";
 import Modal from "./components/CART/MODAL";
 import { useState } from "react";

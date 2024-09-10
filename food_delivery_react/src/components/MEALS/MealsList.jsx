@@ -1,5 +1,5 @@
 
-import Styles from '../CSS/MealsList.module.css';  // Optional: if you want to style the list
+import Styles from '../CSS/MealsList.module.css';  
 import Quantity from './Quantity';
 
 const MealsList = () => {

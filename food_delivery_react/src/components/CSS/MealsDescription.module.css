@@ -5,11 +5,11 @@
     align-items: center;
     text-align: center;
     padding: 20px;
-    margin-top: 2rem; /* Slightly move it down from the top */
+    margin-top: 2rem; 
     background-color: black;
     color: white;
-    border-radius: 10px; /* Adding some rounding to the background */
-    max-width: 800px; /* Optional: limit the width */
+    border-radius: 10px; 
+    max-width: 800px; 
     margin-left: auto;
     margin-right: auto;
   }

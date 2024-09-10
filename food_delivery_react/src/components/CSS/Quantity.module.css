@@ -1,8 +1,8 @@
 .quantityContainer {
     display: flex;
     align-items: center;
-    justify-content: flex-end; /* Aligns the container to the right */
-    gap: 10px; /* Space between the quantity text and button */
+    justify-content: flex-end; 
+    gap: 10px; 
   }
   
   .quantityNumber {
