@@ -1,5 +1,6 @@
 
 import Styles from '../CSS/MealsList.module.css';  // Optional: if you want to style the list
+import Quantity from './Quantity';
 
 const MealsList = () => {
   const List = [
@@ -36,6 +37,7 @@ const MealsList = () => {
           <h2>{item.name}</h2>
           <p>{item.description}</p>
           <p className={Styles.price}>${item.price.toFixed(2)}</p>
+          <Quantity></Quantity>
         </div>
       ))}
     </div>

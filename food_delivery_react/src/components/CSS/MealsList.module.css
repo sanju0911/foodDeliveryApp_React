@@ -39,4 +39,35 @@
     color: #8a2b06;
     font-weight: bold;
   }
+  .mealsList {
+    padding: 20px;
+    margin-top: 1.5rem;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+  }
   
+  .mealItem {
+    display: flex;
+    justify-content: space-between; /* Align items to the left and right */
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .mealItem:last-child {
+    border-bottom: none;
+  }
+  
+  .mealItem h2 {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+  
+  .mealItem p {
+    margin: 0.5rem 0;
+  }
+  
+  .price {
+    color: #8a2b06;
+    font-weight: bold;
+  }

@@ -1,0 +1,27 @@
+.quantityContainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Aligns the container to the right */
+    gap: 10px; /* Space between the quantity text and button */
+  }
+  
+  .quantityNumber {
+    font-weight: bold;
+    margin-left: 5px;
+  }
+  
+  .addButton {
+    background-color: #8a2b06;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .addButton:hover {
+    background-color: #5a1a01;
+  }
+  
