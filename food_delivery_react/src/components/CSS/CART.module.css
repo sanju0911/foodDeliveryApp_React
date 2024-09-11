@@ -59,3 +59,28 @@
     background-color: #5a1a01;
   }
   
+  .quantityControl {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .quantityControl button {
+    background-color: #8a2b06;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .quantityControl button:hover {
+    background-color: #5a1a01;
+  }
+  
+  .quantityControl span {
+    font-size: 1.2rem;
+    min-width: 20px;
+    text-align: center;
+  }

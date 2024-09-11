@@ -1,22 +1,40 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 import Styles from '../CSS/Cart.module.css';
 
 const Cart = ({ onClose }) => {
-  const items = [
+  const [items, setItems] = useState([
     {
       id: 1,
       name: "Sushi",
       price: 22.99,
-      dateAdded: "2024-09-10"
+      quantity: 0
     },
     {
       id: 2,
       name: "Schnitzel",
       price: 16.50,
-      dateAdded: "2024-09-11"
+      quantity: 0
     },
-  ];
+  ]);
+
+  const increaseQuantity = (id) => {
+    setItems(prevItems =>
+      prevItems.map(item =>
+        item.id === id ? { ...item, quantity: item.quantity + 1 } : item
+      )
+    );
+  };
+
+  const decreaseQuantity = (id) => {
+    setItems(prevItems =>
+      prevItems.map(item =>
+        item.id === id && item.quantity > 0
+          ? { ...item, quantity: item.quantity - 1 }
+          : item
+      )
+    );
+  };
 
   return ReactDOM.createPortal(
     <div className={Styles.overlay} onClick={onClose}>
@@ -28,7 +46,11 @@ const Cart = ({ onClose }) => {
               <div className={Styles.itemDetails}>
                 <span>{item.name}</span>
                 <span>${item.price.toFixed(2)}</span>
-                <span>{item.dateAdded}</span>
+                <div className={Styles.quantityControl}>
+                  <button onClick={() => decreaseQuantity(item.id)}>-</button>
+                  <span>{item.quantity}</span>
+                  <button onClick={() => increaseQuantity(item.id)}>+</button>
+                </div>
               </div>
             </li>
           ))}
